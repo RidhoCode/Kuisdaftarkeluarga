@@ -7,13 +7,14 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="5dp"
     app:cardElevation="0dp"
-    app:cardBackgroundColor="@android:color/white">
+    app:cardBackgroundColor="@color/warna">
 
 
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="15dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/gambar"
@@ -26,17 +27,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            tools:text="Nama"
-            android:layout_toEndOf="@+id/gambar"/>
+            android:layout_toEndOf="@+id/gambar"
+            tools:text="Nama" />
 
         <TextView
             android:id="@+id/tv_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Status"
+            android:layout_below="@id/tv_nama"
             android:layout_marginLeft="10dp"
             android:layout_toEndOf="@+id/gambar"
-            android:layout_below="@id/tv_nama" />
+            tools:text="Status" />
+
+        <TextView
+            android:id="@+id/tv_ttl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_status"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/gambar"
+            tools:text="Tempat" />
 
     </RelativeLayout>
 

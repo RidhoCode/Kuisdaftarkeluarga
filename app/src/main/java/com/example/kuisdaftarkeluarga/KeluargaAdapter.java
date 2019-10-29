@@ -36,6 +36,7 @@ public class KeluargaAdapter extends RecyclerView.Adapter<KeluargaAdapter.Keluar
         holder.srcGambar.setImageDrawable(dataList.get(position).getGambar());
         holder.txtNama.setText(dataList.get(position).getNama());
         holder.txtStatus.setText(dataList.get(position).getStatus());
+        holder.txtttl.setText(dataList.get(position).getTtl());
     }
 
     @Override
@@ -44,7 +45,7 @@ public class KeluargaAdapter extends RecyclerView.Adapter<KeluargaAdapter.Keluar
     }
 
     public class KeluargaViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtNama, txtStatus;
+        private TextView txtNama, txtStatus,txtttl;
         private ImageView srcGambar;
 
         public KeluargaViewHolder(@NonNull View itemView) {
@@ -52,6 +53,7 @@ public class KeluargaAdapter extends RecyclerView.Adapter<KeluargaAdapter.Keluar
             srcGambar =(ImageView)itemView.findViewById(R.id.gambar);
             txtNama = (TextView) itemView.findViewById(R.id.tv_nama);
             txtStatus = (TextView) itemView.findViewById(R.id.tv_status);
+            txtttl = (TextView) itemView.findViewById(R.id.tv_ttl);
 
         }
     }

@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 public class Keluarga {
 
 
-    public String nama, status;
+    public String nama, status,ttl;
     public Drawable gambar;
     public Drawable getGambar() {
         return gambar;
@@ -14,11 +14,13 @@ public class Keluarga {
         this.gambar = gambar;
     }
 
-    public Keluarga(Drawable gambar, String nama, String status)
+    public Keluarga(Drawable gambar, String nama, String status,String ttl)
     {
         this.gambar = gambar;
         this.nama = nama;
         this.status = status;
+        this.ttl = ttl;
+
     }
 
     public String getNama() {
@@ -37,4 +39,11 @@ public class Keluarga {
         this.status = status;
     }
 
+    public String getTtl() {
+        return ttl;
+    }
+
+    public void setTtl(String ttl) {
+        this.ttl = ttl;
+    }
 }

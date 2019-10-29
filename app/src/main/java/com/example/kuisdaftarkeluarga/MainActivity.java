@@ -31,9 +31,10 @@ public class MainActivity extends AppCompatActivity {
     private void addData()
     {
         keluargaArrayList = new ArrayList<>();
-//        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.bpk),"Dadang Widyanto","Ayah"));
-//        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.ibu),"Sri Lestari","Ibu"));
-//        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.mas),"Ridho Yuli Firmansah","Anak Ke-1"));
-        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.cat),"Mauludia Dwinta Putri","Anak Ke-2"));
+        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.fat),"Dadang Widyanto","Ayah","Malang "));
+        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.mom),"Sri Lestari","Ibu","Malang"));
+        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.son),"Ridho Yuli Firmansah","Anak Pertama","Malang"));
+        keluargaArrayList.add(new Keluarga(getDrawable(R.drawable.cat),"Mauludia Dwinta Putri","Anak Kedua","Pasuruan"));
+
     }
 }
